@@ -1,0 +1,42 @@
+{"namespace": "com.kafka.producer",
+ "type": "record",
+ "name": "BookAvro",
+ "fields": [
+      {
+           "name": "title",
+           "type": "string"
+         },
+         {
+           "name": "authors",
+           "type": {
+             "items": "string",
+             "type": "array"
+           },
+           "default": []
+         },
+         {
+           "name": "publisher",
+           "type": "string",
+           "default": ""
+         },
+         {
+           "name": "publishedDate",
+           "type": "string",
+           "default": ""
+         },
+         {
+           "name": "pageCount",
+           "type": "double"
+         },
+         {
+           "name": "averageRating",
+           "type": "double",
+           "default": 0.0
+         },
+         {
+           "name": "ratingsCount",
+           "type": "double",
+           "default": 0.0
+         }
+ ]
+}
